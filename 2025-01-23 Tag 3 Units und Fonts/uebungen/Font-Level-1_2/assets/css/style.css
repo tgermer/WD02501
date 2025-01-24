@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Chelsea Market';
+  src: url('../fonts/Chelsea_Market/');
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../fonts/Fredoka/Fredoka-VariableFont_wdth\,wght.ttf');
+  }
+
+@font-face {
+font-family: 'Pacifico';
+src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 15px;
+}
+
+p {
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+}
+
+em {
+    font-family: 'Fredoka', cursive;
+    font-weight: bold;
+    text-shadow: red 2px -2px;
+}
+
+strong {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5px;
+}
+
+a {
+    font-family: 'Fredoka', cursive;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

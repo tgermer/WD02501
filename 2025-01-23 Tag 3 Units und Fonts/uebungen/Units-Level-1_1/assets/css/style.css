@@ -1,0 +1,23 @@
+img:first-of-type {
+  width: 300px;
+}
+
+img:nth-last-of-type(2) {
+  width: 50%;
+}
+
+img:nth-last-of-type(3) {
+    width: 20em;
+}
+
+img:nth-last-of-type(4) {
+    width: 40rem;
+}
+
+img:nth-last-of-type(5) {
+    width: 35vw;
+}   
+
+img:nth-last-of-type(5) {
+    width: 75vh;
+}   

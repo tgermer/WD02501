@@ -1,0 +1,33 @@
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    background-color: #464646;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    color: #333;
+    font-size: 20px;
+}
+
+li {
+    color: #777;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+li:first-child {
+    text-decoration: overline;
+}
+
+li:nth-child(2) {
+    text-decoration: line-through;
+    text-align: center;
+}
+
+li:last-child {
+    text-decoration: underline;
+    text-align: right;
+}

@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #333;
+    height: 100vh;
+}
+
+header .logo{ 
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgray;
+    font-size: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+    letter-spacing: 30%;
+}
+
+header .logo p:last-child {
+    text-indent: 1rem;
+}
+
+header .card {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 15vh;
+    background: rgb(255,0,210);
+    background: linear-gradient(36deg, rgba(255,0,210,1) 0%, rgba(52,52,250,1) 50%, rgba(0,212,255,1) 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-position: left ;
+    background-size: 200%;
+    transition: background-position 0.2s ease-in-out;
+
+}
+
+header .card:hover {
+    /* background: linear-gradient(36deg, rgba(0,212,255,1) 0%, rgba(52,52,250,1) 50%, rgba(255,0,210,1) 100%); */
+    background-position: right;
+}
+
+header .card .claim {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header .card p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    margin-top: 10vh;
+    font-size: 1.65rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+nav li {
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+nav a:hover, .logo:hover  {
+    color: white;
+    text-shadow: white 0 0 20px;
+}
+
+section {
+    margin-top: 15rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(5rem, 10vw, 12rem);
+    text-transform: uppercase;
+    color: lightgray;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-top: -4rem;
+    margin-bottom: 3rem;
+}
+
+main {
+    margin: 0 4rem;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 50vw;
+    font-size: 1.6rem;
+    margin-bottom: 10rem;
+}
+
+article {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+article h3 {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    letter-spacing: 20%;
+}
+article p {
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+
+.image-container {
+    position: relative; /* Container für absolute Positionierung */
+    display: inline-block; /* Passt sich an das Bild an */
+    max-width: 600px; /* Passt sich an die Bildgröße an */
+    
+}
+
+.image-container img {
+    display: block; /* Verhindert Leerraum unter dem Bild */
+    width: 100%; /* Bild skaliert auf die Containergröße */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+    border-radius: 1rem;
+}
+
+.image-container::before {
+    content: ''; /* Pseudoelement benötigt Content */
+    position: absolute; /* Positioniert das Overlay über dem Bild */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(36deg, rgba(255,0,210,.5) 0%, rgba(52,52,250,.5) 50%, rgba(0,212,255,.5) 100%);
+    pointer-events: none; /* Overlay bleibt nicht klickbar */
+    border-radius: 1rem;
+}

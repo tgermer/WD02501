@@ -1,0 +1,9 @@
+p {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 25px;
+    border: 25px solid black;
+    margin: 25px;
+    background-color: lightgreen;
+    margin: 0 auto;
+}

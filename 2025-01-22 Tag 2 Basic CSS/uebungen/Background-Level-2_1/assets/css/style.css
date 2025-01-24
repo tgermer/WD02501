@@ -1,0 +1,12 @@
+section {
+    background-image: url('../img/pattern.avif');
+    color: white;
+    text-align: center;
+}
+
+article {
+    background-image: url('../img/window.avif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
