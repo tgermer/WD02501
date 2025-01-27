@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pseudo-Elements-Level-1_3</title>
+        <style>
+            h1::first-letter {
+                color: #00796b;
+                font-size: 2em;
+            }
+
+            h1:hover::first-letter {
+                color: #4fc3f7;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            .done {
+                text-decoration: line-through;
+            }
+
+            ::before,
+            ::after {
+                display: inline-block;
+                transform: scale(0.7);
+                vertical-align: middle;
+                margin: auto 0.2em;
+            }
+
+            .done::before {
+                content: url("./assets/img/check.png");
+            }
+
+            .ongoing {
+                background-color: aquamarine;
+            }
+
+            .ongoing::before {
+                content: url("./assets/img/doing.png");
+            }
+
+            .future {
+                text-decoration: underline;
+            }
+            .future::before {
+                content: url("./assets/img/no.png");
+            }
+
+            .gym::after {
+                content: url("./assets/img/gym.png");
+            }
+
+            .bill::after {
+                content: url("./assets/img/bill.png");
+            }
+
+            .dance::after {
+                content: url("./assets/img/dance.png");
+            }
+
+            .eat::after {
+                content: url("./assets/img/eat.png");
+            }
+
+            .book::after {
+                content: url("./assets/img/book.png");
+            }
+
+            .organize::after {
+                content: url("./assets/img/organize.png");
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>To do list</h1>
+            <ul>
+                <li class="done gym">Hit the gym</li>
+                <li class="done bill">Pay bills</li>
+                <li class="ongoing dance">Meet George</li>
+                <li class="ongoing eat">By eggs</li>
+                <li class="future book">Read a book</li>
+                <li class="future organize">Organize office</li>
+            </ul>
+        </main>
+    </body>
+</html>
