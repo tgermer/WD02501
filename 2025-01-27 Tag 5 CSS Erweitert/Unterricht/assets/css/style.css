@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 50px;
+
+}
+
+header p {
+    margin-bottom: 2rem;
+}
+
+header p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: blueviolet;
+
+}
+
+header ul {
+    padding-left: 1rem;
+    margin-left: 0.3rem;
+    margin-bottom: 2rem;
+    list-style: none; /* Das musste mit rein. */
+}   
+
+/* header ul li::marker {
+    font-family: "Font Awesome 6 Free";
+    content: '\f004';
+    color: blueviolet;
+    letter-spacing: 10px;
+} */
+
+header ul li::before { /* Das ist die Variante mit ::before. */
+    font-family: 'Font Awesome 6 Free';
+    content: '\f061';
+    color: blueviolet;
+    letter-spacing: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::before, h2::after {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f004';
+    color: red;
+}
+
+
+section ul {
+    padding-left: 1rem;
+    margin-left: 0.3rem;
+    margin-bottom: 2rem;
+} 
+
+section ul li::marker { /* Das ist die Variante mit ::before. */
+    font-family: 'Font Awesome 6 Free';
+    content: '\f061';
+    color: blueviolet;
+    letter-spacing: 10px;
+}
