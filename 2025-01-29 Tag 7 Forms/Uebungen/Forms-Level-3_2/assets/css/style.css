@@ -1,0 +1,89 @@
+:root {
+    --color-green: hsl(182, 25%, 50%);
+    --color-green-darker: hsl(183, 25%, 30%);
+
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.wrapper {
+    max-width: 400px;
+    margin: 5rem auto;
+    background-color: #464646;
+    padding: 1rem;
+    color: white;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.b1, .b2 {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.b1:hover, .b2:hover, button:hover {
+    background-color: var(--color-green-darker);
+}
+
+.active {
+    background-color: var(--color-green);
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    background-color: #464646;
+    font-size: 1rem;
+    color: white;
+    padding: 0.8em 0.4em;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    margin-bottom: 1rem;
+}
+
+.half {
+    width: 49.4%;
+    display: inline-block;
+}
+
+p {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+p a { 
+    color: var(--color-green);
+    text-align: right;
+    text-decoration: underline;
+}
+
+button {
+    color: white;
+    background-color: var(--color-green);
+    border: none;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    letter-spacing: 10%;
+    margin-bottom: 1rem;
+}

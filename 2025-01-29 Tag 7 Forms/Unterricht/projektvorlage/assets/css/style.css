@@ -1,0 +1,28 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: blanchedalmond;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+label, input {
+display: block;
+}
+label {
+    margin-bottom: 0.5rem;
+}
+input {
+    width: 99%;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    border: 2px solid bisque;
+    font-size: 2rem;
+    padding: .1em;
+}
+
+input:focus {
+    border: 1px solid red;
+}

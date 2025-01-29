@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1em;
+    padding: 
+        0
+        env(safe-area-inset-right) 
+        0
+        env(safe-area-inset-left);
+}
+
+header {
+    background: #0c8aa7;
+    color: white;
+    /* padding: 
+        0
+        env(safe-area-inset-right) 
+        0
+        env(safe-area-inset-left); */
+}
+
+main {
+    background-color: red;
+    height: 120vh;
+    /* padding: 
+        0
+        env(safe-area-inset-right) 
+        0
+        env(safe-area-inset-left); */
+}
+
+footer {
+    background: #0c8aa7; /* Farbe für den unteren Bereich */
+    color: white;       /* Textfarbe */
+    padding-bottom: env(safe-area-inset-bottom); /* Dynamisches Padding am unteren Rand */
+    text-align: center; /* Zentrierter Text */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;       /* Höhe passt sich an den Inhalt an */
+}
+
+.safe-area-bottom {
+    background: #003b4f; /* Farbe nur für die Safe Area */
+    height: env(safe-area-inset-bottom); /* Dynamische Höhe */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

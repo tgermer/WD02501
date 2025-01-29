@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="js" href="./assets/js/main.js" />
+        <title>Forms-Level-2_3</title>
+    </head>
+    <body>
+        <main class="wrapper">
+            <h1>Forms-Level-2_3</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Register form</legend>
+                    <label for="name" class="colum">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                    />
+                    <br />
+                    <label for="surname" class="colum">Surname</label>
+                    <input
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        placeholder="Surname"
+                    />
+                    <br />
+                    <label for="email" class="colum">E-Mail</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="E-Mail"
+                    />
+                    <br />
+                    <label for="gender" class="colum">Gender</label>
+                    <label for="male">Male</label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="male"
+                        class="mr"
+                    />
+                    <label for="female">Female</label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="female"
+                    />
+                    <br />
+                    <label for="picture" class="colum">Picture</label>
+                    <input type="file" name="picture" id="picture" />
+                    <br />
+                    <label for="country" class="colum">Country</label>
+                    <select name="country" id="country">
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <br />
+                    <label for="coding" class="colum" class="va-m"
+                        >Preferred languages</label
+                    >
+                    <select
+                        id="languages"
+                        name="languages"
+                        multiple
+                        size="4"
+                        class="va-m"
+                    >
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JS</option>
+                        <option value="react">React</option>
+                    </select>
+                    <p class="va-b">
+                        (To choose more than one use cmd/ctrl key)
+                    </p>
+
+                    <br />
+                    <label for="activity" class="colum"
+                        >Field of activity</label
+                    >
+                    <input type="checkbox" id="it" name="activity" value="IT" />
+                    <label for="it" class="mr">IT</label>
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="activity"
+                        value="Design"
+                    />
+                    <label for="design" class="mr">Design</label>
+                    <input
+                        type="checkbox"
+                        id="other"
+                        name="activity"
+                        value="Other"
+                        class="inline"
+                    />
+                    <label for="other" class="mr">Other</label>
+                    <div>
+                        <button type="submit">Send</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
