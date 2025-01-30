@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato Regular';
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #D9E8E5;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    margin-bottom: 5rem;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem 4rem;
+
+}
+
+header nav, header div {
+    display: flex;
+    align-items: baseline;
+}
+
+header article, header nav, header div {
+    padding: 2rem 0;    
+}
+
+header article {
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+header article img {
+    width: 22px;
+    height: auto;
+}
+
+header article p {
+    font-size: 2.4rem;
+}
+
+header nav ul, header div ul {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+    align-content: center;
+    align-items: baseline;
+}
+
+header div div {
+    margin-left: auto;
+}
+
+header ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+header ul a:hover {
+    background-color: #D9E8E5;
+    border-radius: .5rem;
+    border-bottom: hsl(168, 25%, 5rem);
+}
+
+section article div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    right: 2cap;
+    bottom: 2rem;
+    font-size: 1.6rem;
+}

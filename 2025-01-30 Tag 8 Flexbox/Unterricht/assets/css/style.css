@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.flexContainer {
+    background-color: bisque;
+    height: 70vh;
+    display: flex;
+
+    /* ? horizontale Ausrichtung */
+    /* justify-content: center; */
+
+    /* ? vertiakale Ausrichtung */
+    /* align-items: center; */
+
+    /* ? Flex direction */
+    flex-direction: row;
+
+    /* ? Flex wrap */
+    flex-wrap: wrap;
+
+    /* ? Gap */
+    gap: 1rem 3rem;
+
+}
+
+.flexContainer div {
+    font-size: 2rem;
+    /* height: 100px; */
+    width: 100px;
+    align-self: flex-start;
+
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+  }
+  
+  .purple {
+    background-color: purple;
+}
+
+
+/* + header + nav + */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: thistle;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+header article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header article h1 {
+    line-height: 80%;
+    font-weight: bolder;
+}
+
+header article img {
+    height: 2em
+    /* height: clamp(1rem, -1.5rem + 8vw, 3rem); */
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+/* ! Cards */
+
+.cards-wrapper {
+    max-width: 600px;
+    background-color: #2b2b2b;
+    color: darkgray;
+    margin: 0 auto;
+    padding: 2rem clamp(1rem, -3.2188rem + 13.5vw, 4.375rem);
+    border: 1px solid darkgray;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.cards-wrapper a {
+    color: orangered;
+}
+
+.cards-wrapper .properties {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    gap: 1em
+}
+
+.cards-wrapper .single-propertie {
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+    gap: 1em;
+    padding: .5em 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cards-wrapper .single-propertie:hover, .cards-wrapper .view-property-btn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.cards-wrapper .single-card-text h3 {
+    margin-bottom: 2rem;
+    /* font-size: clamp(2rem, 2vw, 4rem); */
+    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+}
+
+.cards-wrapper .single-card-text p {
+margin-bottom: 5rem;
+}
+
+.cards-wrapper .price {
+    display: flex;
+    align-items: center;
+    gap: 2rem 5rem;
+    flex-wrap: wrap;
+}
+
+.cards-wrapper .price-house {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.cards-wrapper .view-property-btn {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cards-wrapper .price-house p:first-of-type {
+    color: orangered;
+    /* margin-bottom: .5em; */
+}
+.cards-wrapper .price-house p:last-of-type {
+    font-size: 1.3em;
+}

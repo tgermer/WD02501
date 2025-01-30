@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --nav-height: 4.5rem;
+}
+
+html {
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header .nav {
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--nav-height);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #666;
+    font-weight: 300;
+}
+
+header ul {
+    display: flex;
+    gap: .5rem 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #4c4c4c;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+header ul a:hover {
+    color:#745CF9;
+}
+
+header .header-bg-img {
+    background-image: url('../img/photo-1443527216320-7e744084f5a7-1.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: calc(100vh - var(--nav-height));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-bg-img p {
+    text-align: center;
+    text-shadow: 0 0 10px #4c4c4c;
+}
+
+header .header-bg-img p:first-of-type {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+header .header-bg-img p:last-of-type {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+header .header-buttons {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header .header-buttons a {
+    border: 2px solid white;
+    padding: 2em 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 150px;
+    text-align: center;
+}
+
+header .header-buttons a:nth-child(2) {
+    background-color: #745CF9;
+    border: #745CF9;
+}
+
+header .header-buttons a:nth-child(1):hover {
+    background-color: white;
+    color:#4c4c4c
+}
+
+header .header-buttons a:nth-child(2):hover {
+    background-color: hsl(249, 93%, 57%);
+}

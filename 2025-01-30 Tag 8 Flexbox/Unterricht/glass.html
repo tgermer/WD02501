@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+        <link rel="js" href="./assets/js/main.js" />
+        <title>Flexbox</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-image: url("./assets/img/Flexbox\ Basics.png");
+                background-position: top center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .wrapper {
+                max-width: 60vw;
+                margin: 3rem auto;
+                height: 80vh;
+                padding: 1rem 3rem;
+                border-radius: 1rem;
+            }
+
+            .glass {
+                backdrop-filter: blur(10px);
+                border-radius: 10px; /* Optional: Runde Ecken */
+                box-shadow: 0 0 15px 5px rgba(256, 256, 256, 0.05); /* Erzeugt den blurry Effekt */
+            }
+
+            h1 {
+                color: hsl(252, 71%, 96%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper glass">
+            <h1>Flexbox</h1>
+        </div>
+    </body>
+</html>
