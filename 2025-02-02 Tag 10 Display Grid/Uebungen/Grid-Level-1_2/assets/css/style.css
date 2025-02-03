@@ -1,0 +1,76 @@
+.layout1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .2rem;
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+.layout1 .box1 {
+    background-color: red;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.layout1 .box2 {
+    background-color: blue;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.layout1 .box3 {
+    background-color: green;
+    grid-column: 3 /span 2;
+}
+
+.layout1 .box4, .layout1 .box5 {
+    background-color: purple;
+}
+
+.layout2 {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    height: 300px;
+    gap: .2rem;
+}
+
+.layout2 .box1 {
+    background-color: red;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.layout2 .box2 {
+    background-color: blue;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.layout2 .box3 {
+    background-color: green;
+    grid-column: 2 /span 2;
+}
+
+.layout2 .box4 {
+    background-color: purple;
+}
+
+.layout2 .box5 {
+    background-color: aqua;
+}
+
+.layout2 .box6 {
+    background-color: greenyellow;
+    grid-column: 3 / span 2;
+}
+
+.layout2 .box7 {
+    background-color: fuchsia;
+    grid-column: 1 / -1;
+}
