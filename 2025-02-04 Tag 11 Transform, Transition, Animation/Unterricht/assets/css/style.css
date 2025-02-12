@@ -1,0 +1,44 @@
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    margin: 3rem auto;
+    text-align: center;
+    
+
+    /* 1. Was soll animiert werden. all = alles (background-color usw.) */
+    /* 2. Wie lang soll die Animation dauern */
+    /* 3. Soll es einen Verzögerung geben, bis die Animation gestartet wird? */
+    /* Wie soll die Animation verlaufen (optional) -> https://cubic-bezier.com/#.17,.67,.83,.67 */
+    transition: all 0.5s 0s linear;
+}
+
+.box:hover {
+    /* transform: translateX(100px); */
+    transform: rotate(360deg);
+    transform: scale(1.1);
+    transform: skew(-20deg);
+    background-color: plum;
+    /* font-size: 2rem; */
+    /* box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0); */
+    transform: rotate(360deg);
+    /* transform-origin: bottom right; */
+}
+
+
+.box2 {
+    background-color: thistle;
+    width: 150px;
+    height: 150px;
+    margin: 3rem auto;
+
+    animation: divDrehen 1s linear infinite normal 0.5s;
+}

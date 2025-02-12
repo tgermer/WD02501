@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+        <!-- <link rel="js" href="./assets/js/main.js" /> -->
+        <title>TailwindCSS</title>
+    </head>
+    <body class="dark:bg-gray-800 bg-sky-50">
+        <header class="max-w-[1000px] mx-auto px-4 pb-20 relative">
+            <nav class="flex justify-between items-center mb-15">
+                <img src="./assets/img/logo.svg" alt="" />
+                <div class="hidden md:flex gap-[3vw]">
+                    <a href="#">Home</a><a href="#">About</a
+                    ><a href="#">Services</a><a href="#">Contact</a>
+                </div>
+                <a
+                    class="bg-blue-400 p-2 px-4 text-white rounded-full shadow-xl inline-block"
+                    href="#"
+                    >Book Now</a
+                >
+            </nav>
+            <section class="flex flex-col md:flex-row -between items-center">
+                <div class="md:max-w-[350px]">
+                    <p class="text-teal-400">Dr. Matthew Anderson</p>
+                    <h1 class="text-4xl font-bold mb-3">
+                        A dedicated doctor you can trust
+                    </h1>
+                    <p class="text-slate-400 mb-3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Elementum eget vel, nunc nulla feugiat. Metus ut.
+                    </p>
+                    <a
+                        class="bg-blue-400 p-2 px-4 text-white rounded-full shadow-xl inline-block"
+                        href="#"
+                        >Book an appointment</a
+                    >
+                </div>
+                <div class="">
+                    <img
+                        class="w-full"
+                        src="./assets/img/picture1.png"
+                        alt=""
+                    />
+                </div>
+            </section>
+            <section
+                class="md:relative md:inset-x-0 md:bottom-0 flex flex-col md:flex-row gap-3 max-w-4xl justify-center m-auto"
+            >
+                <div class="bg-blue-400 text-white p-3 rounded-xl">
+                    <h3 class="font-bold">24 hour service</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="bg-blue-400 text-white p-3 rounded-xl">
+                    <h3 class="font-bold">24 hour service</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="bg-blue-400 text-white p-3 rounded-xl">
+                    <h3 class="font-bold">24 hour service</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </section>
+            <div class="static"></div>
+        </header>
+        <main>
+            <section class="bg-white">
+                <div
+                    class="max-w-[1000px] mx-auto flex flex-col md:flex-row -between items-center"
+                >
+                    <img
+                        class="md:max-w-[350px]"
+                        src="./assets/img/picture2.jpeg"
+                        alt=""
+                    />
+                    <div class="">
+                        <p class="text-teal-400">Dr. Matthew Anderson</p>
+                        <h1 class="text-4xl font-bold mb-3">
+                            A dedicated doctor you can trust
+                        </h1>
+                        <p class="text-slate-400 mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Elementum eget vel, nunc nulla feugiat. Metus
+                            ut.
+                        </p>
+                        <a
+                            class="bg-blue-400 p-2 px-4 text-white rounded-full shadow-xl inline-block"
+                            href="#"
+                            >Book an appointment</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
